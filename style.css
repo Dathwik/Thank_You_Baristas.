@@ -1,0 +1,232 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F7F7F5; /* Starbucks cream */
+    color: #1C1C1C;
+    line-height: 1.6;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-cream);
+}
+
+#hero .container {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Hero Heading */
+#hero h1 {
+    font-size: 3.5rem;
+    color: var(--green-dark);
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Subtext */
+#hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+/* Subtle underline accent */
+#hero h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--green-primary);
+    margin: 1.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* =====================
+   HERO LOGO
+===================== */
+.hero-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+
+/* =====================
+   THEME VARIABLES
+===================== */
+:root {
+    --green-primary: #006241;
+    --green-dark: #1E3932;
+    --gold-accent: #CBA258;
+
+    --bg-cream: #F7F7F5;
+    --bg-white: #FFFFFF;
+
+    --text-primary: #1C1C1C;
+    --text-muted: #6B6B6B;
+
+    --border-light: #E6E6E6;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    --max-width: 1100px;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align:center
+}
+
+/* =====================
+   TYPOGRAPHY
+===================== */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--green-dark);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+/* =====================
+   SECTIONS
+===================== */
+section {
+    background-color: var(--bg-cream);
+}
+
+header {
+    background-color: var(--bg-cream);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =====================
+   RESPONSIVE BASE
+===================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.4rem;
+    }
+
+    #hero p {
+        font-size: 1.05rem;
+    }
+}
+
+.story-card {
+    margin-top: 2rem;
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.gratitude-card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.gratitude-card h4 {
+    color: var(--green-primary);
+}
+
+.gratitude-card h4:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color:#CBA258;
+}
+
+.baristas {
+    color:var(--green-primary);
+    font-weight: 900;
+}
+
+.baristas:hover {
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color:#CBA258;
+}
+
+.footer p{
+    text-align:center;
+    font-size: 10px;
+}
+
+#stories {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#notes {
+    margin-bottom: 50px;
+}
